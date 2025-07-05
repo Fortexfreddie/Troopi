@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
 const messages = [
-    "🎉 Welcome to Pi Marketplace — Buy & Sell with Pi!",
+    "🎉 Welcome to Troopi — Buy & Sell with Pi!",
     "🚀 Launch Offer: 0% service fees for new users!",
-    "💰 Earn Pi by offering freelance services.",
+    "💰 Earn Pi or Fiat by offering freelance services.",
     "📦 Now accepting both Pi and Fiat payments!",
 ];
 
