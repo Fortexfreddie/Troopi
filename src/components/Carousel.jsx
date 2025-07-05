@@ -30,7 +30,7 @@ const Carousel = () => {
     const [current, setCurrent] = useState(0);
 
     return (  
-        <div className="relative w-full h-64 lg:h-[50vh] overflow-hidden backdrop-blur-md border border-[rgba(255,255,255,0.15)] shadow-md rounded-xl">
+        <div className="relative w-full h-64 lg:h-[50vh] overflow-hidden backdrop-blur-md shadow-md rounded-b-xl">
             <div className="w-full h-full flex transition-transform duration-700 ease-in-out-quad" style={{ transform: `translateX(-${current * 100}%)` }}>
                 <div className="absolute inset-0"></div>
                 {

@@ -7,7 +7,7 @@ const Home = () => {
             <div className="flex-grow">
                 <div className="container mx-auto">
                     <Navbar />
-                    <div className="p-4">
+                    <div className="p-4 bg-[#D4AA7D]/10">
                         <HeroSection />
                     </div>
                 </div>
