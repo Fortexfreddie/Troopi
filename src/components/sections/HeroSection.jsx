@@ -9,7 +9,7 @@ const HeroSection = () => {
             <div className="hidden lg:block w-[15%]"><Sidebar /></div>
             <div className="w-full lg:w-[60%]"><Carousel /></div>
             <div className="hidden lg:block w-[25%]">
-                <div className="grid grid-cols-1 gap-4 h-full">
+                <div className="grid grid-cols-1 gap-4 h-full py-4">
                     <motion.div 
                         whileHover={{
                             y: [-2, -10, 3, -5, 4, -3, 0], // bounce keyframes
