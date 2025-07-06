@@ -8,7 +8,7 @@ const Sidebar = () => {
     //     </div>
     // );
     return (  
-        <aside className="w-full h-full bg-[#1f1f1f] text-white hidden lg:block backdrop-blur-md shadow-md rounded-xl overflow-hidden sticky top-2">
+        <aside className="w-full h-full bg-[#1f1f1f] text-white hidden lg:block backdrop-blur-md shadow-md rounded-xl overflow-hidden sticky top-6">
             <span className="flex items-center gap-4 text-md py-3 px-4 text-[#272727] bg-[#D4AA7D]">
                 <FaBars />
                 <h2 className="font-bold uppercase">Category</h2>
