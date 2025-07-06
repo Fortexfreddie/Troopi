@@ -29,8 +29,16 @@ const slides = [
 const Carousel = () => {
     const [current, setCurrent] = useState(0);
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrent((prev) => (prev + 1) % slides.length);
+        }, 3000)
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (  
-        <div className="relative w-full h-64 lg:h-[50vh] overflow-hidden backdrop-blur-md shadow-md rounded-xl lg:rounded-t-none lg:rounded-b-xl">
+        <div className="relative w-full h-64 lg:h-[50vh] overflow-hidden backdrop-blur-md shadow-md rounded-xl">
             <div className="w-full h-full flex transition-transform duration-700 ease-in-out-quad" style={{ transform: `translateX(-${current * 100}%)` }}>
                 <div className="absolute inset-0"></div>
                 {

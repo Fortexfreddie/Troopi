@@ -1,5 +1,7 @@
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/sections/HeroSection";
+import Sidebar from "../components/Sidebar";
+import FeaturedSection from "../components/sections/FeaturedSection";
 
 const Home = () => {
     return (  
@@ -8,7 +10,13 @@ const Home = () => {
                 <div className="container mx-auto">
                     <Navbar />
                     <div className="px-4 py-8 bg-[#D4AA7D]/10">
-                        <HeroSection />
+                        <div className="flex gap-4">
+                            <Sidebar />
+                            <div className="flex flex-col items-center gap-6">
+                                <HeroSection />
+                                <FeaturedSection />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

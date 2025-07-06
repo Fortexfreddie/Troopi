@@ -1,14 +1,12 @@
 import Carousel from "../Carousel";
-import Sidebar from "../Sidebar";
 import img from "../../assets/cus2.png";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {    
     return (  
         <div className="flex gap-4 w-full">
-            <div className="hidden lg:block w-[15%]"><Sidebar /></div>
-            <div className="w-full lg:w-[60%]"><Carousel /></div>
-            <div className="hidden lg:block w-[25%]">
+            <div className="w-full lg:w-[70%]"><Carousel /></div>
+            <div className="hidden lg:block w-[30%]">
                 <div className="grid grid-cols-1 gap-4 h-full py-4">
                     <motion.div 
                         whileHover={{

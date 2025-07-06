@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (  
         <nav className="flex flex-col bg-transparent shadow-sm py-2 px-4">
-            <div className="z-20 flex items-center justify-between py-2 px-6 bg-[rgba(255,255,255,0.08)] backdrop-blur-md border border-[rgba(255,255,255,0.15)] shadow-md rounded-xl">
+            <div className="z-20 flex items-center justify-between py-2 px-6 bg-white/10 backdrop-blur-md border border-white/20 shadow-md rounded-xl">
                 <span className="lg:hidden text-[#D4AA7D] cursor-pointer"><FaBars /></span>
                 <TopBanner />
                 <NavDropdown />
@@ -27,12 +27,12 @@ const Navbar = () => {
                     }}
                     className='inline-block'>oo</motion.span>pi
                 </h1>
-                <span onClick={() => setShowSearch(!showSearch)} className="lg:hidden text-[#D4AA7D] bg-[rgba(255,255,255,0.08)] hover:bg-[rgba(255,255,255,0.2)] backdrop-blur-md border border-[rgba(255,255,255,0.15)] shadow-md rounded-full p-2 cursor-pointer transition-colors duration-200"><FaSearch /></span>
+                <span onClick={() => setShowSearch(!showSearch)} className="lg:hidden text-[#D4AA7D] bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 shadow-md rounded-full p-2 cursor-pointer transition-colors duration-200"><FaSearch /></span>
                 <div className="flex items-center gap-4 max-w-lg">
                     <div className="w-md hidden lg:block">
                         <Searchbar />
                     </div>
-                    <span className="hidden lg:block bg-[rgba(255,255,255,0.08)] hover:bg-[rgba(255,255,255,0.05)] active:bg-[rgba(255,255,255,0.05)] backdrop-blur-md border border-[rgba(255,255,255,0.15)] shadow-lg rounded-full p-2 text-[#D4AA7D] hover:text-[#c99660] active:text-[#c99660] cursor-pointer transition-colors duration-200"><FaShoppingCart className="h-6 w-6" /></span>
+                    <span className="hidden lg:block bg-white/10 hover:bg-white/20 active:bg-white/20 backdrop-blur-md border border-white/20 shadow-lg rounded-full p-2 text-[#D4AA7D] hover:text-[#c99660] active:text-[#c99660] cursor-pointer transition-colors duration-200"><FaShoppingCart className="h-6 w-6" /></span>
                 </div>
             </div>
             <div className={`block lg:hidden transition-all duration-500 px-6 ${showSearch ? 'opacity-100 translate-y-0 max-h-[200px] mt-4' : 'opacity-0 -translate-y-2 max-h-0'} `}>
