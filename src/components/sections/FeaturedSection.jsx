@@ -10,7 +10,7 @@ const FeaturedSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
                 {
                     dailyDeals.map((dailyDeal) => (
-                        <div key={dailyDeal.id} className="h-80 bg-white/10 border border-white/20 overflow-hidden backdrop-blur-md shadow-md rounded-xl hover:shadow-[#D4AA7D]/30 transition-shadow duration-300 cursor-pointer">
+                        <div key={dailyDeal.id} className="h-80 border border-white/20 overflow-hidden backdrop-blur-md shadow-md rounded-xl hover:shadow-[#D4AA7D]/30 transition-shadow duration-300 cursor-pointer">
                             <div className="h-2/5 relative">
                                 <div className="absolute top-2 right-2 bg-[#D4AA7D] text-black text-sm font-semibold px-3 py-0.5 rounded">-{dailyDeal.discount}%</div>
                                 <img src={dailyDeal.image} alt="" className="w-full h-full object-center object-cover" />
