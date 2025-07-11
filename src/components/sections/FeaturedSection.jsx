@@ -3,7 +3,7 @@ import dailyDeals  from "../../data/dailyDeals";
 
 const FeaturedSection = () => {
     return (  
-        <div className="flex flex-col gap-4 w-full bg-[#1f1f1f] rounded-xl shadow-md p-4 backdrop-blur-md">
+        <div className="flex flex-col gap-4 w-full bg-dark-brown rounded-xl shadow-md p-4 backdrop-blur-md">
             <div className="border-b border-[#D4AA7D]/30 pb-4">
                 <h1 className="text-3xl text-[#D4AA7D] font-bold uppercase">daily deals</h1>
             </div>
