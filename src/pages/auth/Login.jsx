@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -86,6 +88,8 @@ const Login = () => {
                 </a>
               </span>
               <motion.button
+                onClick={() => navigate("/home")}
+                whileFocus={{ scale: 1.05 }}
                 initial={{ backgroundSize: "0% 100%" }}
                 whileHover={{ backgroundSize: "100% 100%" }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -95,7 +99,7 @@ const Login = () => {
                   backgroundImage:
                     "linear-gradient(to right, #1f2937, #1f2937)",
                 }}
-                type="submit"
+                type="button"
                 className="w-full my-4 p-2 rounded-2xl bg-gray-300 text-sm text-white font-bold cursor-pointer"
               >
                 Log In
